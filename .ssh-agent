@@ -1,0 +1,3 @@
+SSH_AUTH_SOCK=/tmp/ssh-VQ2jlc4Ao010/agent.12864; export SSH_AUTH_SOCK;
+SSH_AGENT_PID=12180; export SSH_AGENT_PID;
+echo Agent pid 12180;
