@@ -45,7 +45,9 @@ if ! ssh-add -l > /dev/null 2>&1; then
 fi
 
 # enable dir_colors
-eval `dircolors ~/.dir_colors -b`
+if [ -x /usr/bin/dircolors ]; then
+    test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
+fi
 
 # default wsl bashrc
 # ~/.bashrc: executed by bash(1) for non-login shells.
