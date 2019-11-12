@@ -40,7 +40,7 @@ if [ $( ps -ef | grep ssh-agent | grep -v grep | wc -l ) -eq 0 ]; then
 fi
 if ! ssh-add -l > /dev/null 2>&1; then
     source $SSH_AGENT_FILE
-    ssh-add ~/.ssh/bizcomjapan_1.key  
+    # ssh-add ~/.ssh/bizcomjapan_1.key 
     ssh-add ~/.ssh/yniwa-github.key   
 fi
 
