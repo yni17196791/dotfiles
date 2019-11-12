@@ -46,7 +46,8 @@ fi
 
 # enable dir_colors
 if [ -x /usr/bin/dircolors ]; then
-    test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
+    test -r ~/.dircolors && eval "$(dircolors -b)" || eval "$(dircolors -b ~/.dir_colors)"
+    alias ls='ls --color=auto'
 fi
 
 # default wsl bashrc
