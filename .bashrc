@@ -44,6 +44,10 @@ if ! ssh-add -l > /dev/null 2>&1; then
     ssh-add ~/.ssh/yniwa-github.key   
 fi
 
+# enable dir_colors
+eval `dircolors ~/.dir_colors -b`
+
+# default wsl bashrc
 # ~/.bashrc: executed by bash(1) for non-login shells.
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
